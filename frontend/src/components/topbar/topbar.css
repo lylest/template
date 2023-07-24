@@ -1,0 +1,52 @@
+.top-bar-wrapper {
+    width: 100%;
+    display: inline-flex;
+    border-bottom: 1px solid var(--bg8);
+}
+.logo-box {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin: 20px 10px 12px 25px;
+}
+.logo-box img {
+    width: 90%;
+    height: 90%;
+}
+.top-bar-wrapper p {
+    padding:27px 12px 12px 0px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+.top-bar-filter {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.p-dropdown-panel {
+    width: 80%;
+    margin-left: 0%;
+}
+.card-bar {
+    width: 90%;
+    display: inline-flex;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+.card-bar-far {
+    margin-left: auto;
+}
+.card-bar-far p {
+    color: var(--text-color3);
+}
+.top-bar-filter {
+    visibility: visible;
+}
+
+@media(min-width: 1000px) {
+    .top-bar-filter {
+        visibility: hidden;
+    }
+}
