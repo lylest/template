@@ -7,10 +7,10 @@ Welcome to the Full-Stack MERN Template! This repository serves as a starting po
 ## Features
 
 - Full-featured backend with Node.js and Express.
-- Robust frontend with React and Redux for state management.
+- Robust frontend with React.
 - User authentication and authorization using JSON Web Tokens (JWT).
 - MongoDB for scalable and flexible database management.
-- Bootstrap for responsive and mobile-friendly UI design.
+- Prime react for responsive and mobile-friendly UI design.
 - RESTful API design to communicate between frontend and backend.
 
 ## Prerequisites
@@ -147,7 +147,6 @@ Here is the `package.json` for the frontend:
 
 - **start**: `node index.js`
   - Start the backend server in production mode.
-  
 - **dev**: `nodemon index.js`
   - Start the backend server using nodemon in development mode, which automatically restarts the server when changes are made to the files.
 
@@ -155,13 +154,10 @@ Here is the `package.json` for the frontend:
 
 - **start**: `react-scripts start`
   - Start the frontend development server.
-  
 - **build**: `react-scripts build`
   - Build the production-ready frontend application.
-  
 - **test**: `react-scripts test`
   - Run tests in the frontend application.
-  
 - **eject**: `react-scripts eject`
   - Eject from the Create React App configuration, allowing customization of webpack and other build tools.
 
