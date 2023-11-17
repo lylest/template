@@ -13,14 +13,11 @@ const userSchema = mongoose.Schema(
       required: false,
       default:"active"
     },
-    companies:[{ 
-      type: mongoose.Schema.Types.ObjectId, ref: "companies", defaut:[]
-    }],
     email: {
       type: String,
       required: true,
     },
-    region: {
+    address: {
       type: String,
       required: true,
     },
@@ -35,7 +32,6 @@ const userSchema = mongoose.Schema(
     },
     permissions: {
       type:Array,
-      //type: mongoose.Schema.Types.ObjectId, ref: "permissions",
       default:generatePermissions(),
       required: false,
     },
@@ -45,6 +41,7 @@ const userSchema = mongoose.Schema(
     },
     photoURL: {
       type: String,
+      required:true,
       default: "https://picsum.photos/seed/picsum/200/200",
      },
   },

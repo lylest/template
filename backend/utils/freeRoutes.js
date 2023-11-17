@@ -1,5 +1,8 @@
 const freeRoutes = [
-    "users"
+   {
+     model:"users",
+     action:["create","read"]
+   }
 ]
 
 module.exports = { freeRoutes }
