@@ -1,12 +1,13 @@
 import React from 'react'
 import './loader.css'
-import { ProgressSpinner } from 'primereact/progressspinner'
+import Lottie from 'lottie-react'
+import AnimatedLoader from '../../assets/AnimatedLoader.json'
+
 
 function Loader() {
   return (
-   
     <div className='empty-center' >
-      <ProgressSpinner  className='center-icon'style={{ marginTop: '50%'}} />
+     <Lottie animationData={AnimatedLoader} style={{ marginTop: '50%', width: 80, height: 80 }} />
     </div>
   )
 }

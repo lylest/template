@@ -8,14 +8,14 @@ function MenuItem({ path_name, title, Icon, rightTitle }) {
 
   return (
     <div className="menu-bar" id={ path_name === pathname ? 'active' :'inactive'} >
-    <Link to={ path_name }><div className="menu-icon" id="touchable"> 
+    <Link to={ path_name }><div className="menu-icon" > 
             <Icon color={
-              path_name === pathname  ? "#D71BEB" : "#666"
+              path_name === pathname  ? "#F8CD06" : "#f2f3f6"
             } size={20} /> </div></Link>
           <div className="menu-list"><Link to={ path_name }> { title} </Link></div>
 
          { rightTitle > 0 ? <div className="menu-with-icon-far">
-          <Badge value={rightTitle} severity="secondary" style={{ margin:'20px 12px 12px 12px'}} /></div> : null }
+          <Badge value={rightTitle} severity="danger" style={{ margin:'20px 12px 12px 12px'}} /></div> : null }
           
      </div>
   )

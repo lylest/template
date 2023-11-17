@@ -8,19 +8,18 @@ export const updateContextReducer = (state,action)=>{
                 return {
                   ...state,
                   currentUser: action.payload
-               } 
-                 
-               case 'set_encounters':
-                  return {
-                    ...state,
-                    encounters: action.payload
                }
-
-               case 'set_loading':
+               case 'set_language':
                   return {
                     ...state,
-                    isLoading: action.payload
-                 }
+                    isEnglish: action.payload
+               } 
+               case 'switch_shop':
+                  return {
+                    ...state,
+                    activeShop: action.payload
+               } 
+
 
               default: return state    
         }
@@ -28,10 +27,10 @@ export const updateContextReducer = (state,action)=>{
 }
 
 export const GlobalContextProvider = ({children})=>{
-         const[state,dispatch] = useReducer(updateContextReducer,{
+         const[ state, dispatch ] = useReducer(updateContextReducer,{
                 currentUser:null,
-                encounters:[],
-                isLoading: true
+                isEnglish: true,
+                activeShop:null
          })
          return (
             <GlobalContexts.Provider value={{...state,dispatch}}>

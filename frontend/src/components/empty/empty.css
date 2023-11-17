@@ -1,8 +1,7 @@
 .empty-center {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-top: 1px solid inherit;
+    margin: 0;
+    display: grid;
+    place-items: center;
 }
 .empty-center p {
     font-size:20px;

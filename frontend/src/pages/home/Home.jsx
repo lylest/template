@@ -1,17 +1,19 @@
 import React from 'react'
 import Sider from '../../components/sider/Sider'
 import Topnav from '../../components/topbar/Topnav'
-  
+import Userbar from '../../components/userbar/Userbar' 
+
 function Home() {
 
   return (
-    <div className='page-container'>
-        <Topnav  page="home"/>
-        <div className='container'>
-          <div className='sider'><Sider /></div>
-          <div className='section'>
+    <div className="main-wrapper">
+      <Topnav />
+      <div className="container">
+          <div className="sider"><Sider /></div>
+          <div className="section">
+             <Userbar title="Dashboard"/>
           </div>
-        </div>
+    </div>
     </div>
   )
 }
